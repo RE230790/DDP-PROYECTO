@@ -1,0 +1,128 @@
+/* --- Importar Fuente Moderna --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* --- Reset y Fondo de Pantalla --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f4f9f9; /* Fondo de la pantalla general */
+}
+
+/* --- Truco: Convertir el Body en la Tarjeta Principal --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    max-width: 850px; /* Ancho máximo de la tarjeta */
+    margin: 40px auto; /* Centrado en la pantalla */
+    padding: 40px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra elegante */
+}
+
+/* --- Títulos --- */
+h1 {
+    color: #0077b6;
+    font-size: 24px;
+    border-bottom: 3px solid #00B4D8;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2a9d8f; /* Tono verde esmeralda para subtítulos */
+    margin: 35px 0 20px 0;
+    font-size: 20px;
+}
+
+/* --- Párrafos y Datos del Paciente --- */
+p {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+p strong {
+    color: #0077b6;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* --- Contenedor del Odontograma --- */
+.odontograma-container {
+    background: #f8fbfa;
+    border: 2px dashed #00B4D8;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.odontograma-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    margin-top: 20px;
+}
+
+/* Input File (Seleccionar archivo) */
+input[type="file"] {
+    display: block;
+    margin: 0 auto 15px auto;
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- Textareas (Antecedentes, Alergias, etc.) --- */
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    font-family: inherit;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s ease;
+    resize: vertical;
+    min-height: 100px;
+}
+
+form textarea:focus {
+    border-color: #00B4D8;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 180, 216, 0.15);
+}
+
+/* --- Botones Premium --- */
+button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #00B4D8 0%, #0096c7 100%);
+    color: white;
+    border: none;
+    border-radius: 25px; /* Forma de píldora */
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 180, 216, 0.3);
+    transition: all 0.3s ease;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0096c7 0%, #0077b6 100%);
+    box-shadow: 0 6px 15px rgba(0, 180, 216, 0.4);
+    transform: translateY(-2px);
+}
